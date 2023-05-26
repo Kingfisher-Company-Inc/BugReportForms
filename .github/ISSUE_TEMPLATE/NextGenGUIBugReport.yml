@@ -14,6 +14,13 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
+- type: checkboxes
+  attributes:
+    label: There is no customer sensitive data in this bug report!
+    description: ENSURE THERE IS NO CUSTOMER SENSITIVE DATA IN THIS BUG REPORT. THIS ISSUE IS PUBLICLY VIEWABLE AND SEARCHABLE DUE TO GITHUB'S POLICY OF NOT ALLOWING PRIVATE BUG REPORTING. IF THERE IS CUSTOMER SENSITIVE DATA PLEASE SEND VIA DIRECT EMAIL.
+    options:
+    - label: I AM 100% SURE THERE IS NO CUSTOMER SENSITIVE DATA!!!
+      required: true
 - type: textarea
   attributes:
     label: Current Behavior
@@ -83,6 +90,24 @@ body:
     options:
       - Windows 10
       - Windows 7
+      - Windows 11
+   validations:
+      required: true
+- type: dropdown
+  id: SQL Version
+  attributes:
+    label: What SQL Version are you seeing the problem on?
+    multiple: true
+    options:
+      - 2022
+      - 2019
+      - 2017
+      - 2016
+      - 2014
+      - 2012
+      - 2008
+   validations:
+      required: true
 - type: textarea
   id: logs
   attributes:
@@ -98,3 +123,10 @@ body:
       Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
   validations:
     required: false
+- type: checkboxes
+  attributes:
+    label: Double check that there is no customer sensitive data in this bug report!
+    description: ENSURE THERE IS NO CUSTOMER SENSITIVE DATA IN THIS BUG REPORT. THIS ISSUE IS PUBLICLY VIEWABLE AND SEARCHABLE DUE TO GITHUB'S POLICY OF NOT ALLOWING PRIVATE BUG REPORTING. IF THERE IS CUSTOMER SENSITIVE DATA PLEASE SEND VIA DIRECT EMAIL.
+    options:
+    - label: I AM 200% SURE THERE IS NO CUSTOMER SENSITIVE DATA!!!
+      required: true
