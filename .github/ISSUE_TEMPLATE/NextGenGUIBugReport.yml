@@ -91,7 +91,7 @@ body:
     render: shell
 - type: textarea
   attributes:
-    label: Anything else?
+    label: Anything else? Attach Files Here By Dragging Below.
     description: |
       Links? References? Anything that will give us more context about the issue you are encountering!
 
