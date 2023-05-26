@@ -1,7 +1,7 @@
 name: 🐞 NextGenGUI Bug
 description: File a bug/issue
 title: "KCi NextGenGUI Bug Submit Form"
-labels: [Bug, Needs Triage]
+labels: [bug, help wanted]
 assignees:
   - davekfci
   - JingtianLi-KCi
