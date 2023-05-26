@@ -2,6 +2,10 @@ name: 🐞 NextGenGUI Bug
 description: File a bug/issue
 title: "KCi NextGenGUI Bug Submit Form"
 labels: [Bug, Needs Triage]
+assignees:
+  - davekfci
+  - Jingtian-KCi
+  - AaronOcchipintiKCi
 body:
 - type: checkboxes
   attributes:
